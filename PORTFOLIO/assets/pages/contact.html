@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacts</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="/assets/styles/contact.css"/>
+</head>
+<body>
+
+  <header class="contact-header">
+    <h2 class="contact-title">Contact me</h2>
+    <ul class="contact-nav">
+      <li><a href="/index.html">HOME</a></li>
+      <li><a href="/assets/pages/about.html">ABOUT ME</a></li>
+      <li><a href="/assets/pages/project.html">PROJECTS</a></li>
+    </ul>
+  </header>
+
+  <section class="contact-section" id="contact">
+    <div class="contact-container">
+     
+      <form action="https://formspree.io/f/xrbldjep" method="POST" class="contact-form" autocomplete="off" novalidate>
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name" required>
+
+        <label for="email">Email</label>
+        <input id="email" type="email" name="_replyto" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+
+      <div class="right-col">
+        <p class="tagline">
+          Let’s turn ideas into something beautiful,<br>
+          drop me a message and let’s create together.
+        </p>
+
+        <div class="info-box">
+          <a class="info-item" href="mailto:itsmebuwa69@gmail.com" target="_blank" rel="noopener">
+            <i class="fa-solid fa-envelope"></i>
+            <span>itsmebuwa69@gmail.com</span>
+          </a>
+
+          <a class="info-item" href="tel:+639632735608">
+            <i class="fa-solid fa-phone"></i>
+            <span>+63 963 273 5608</span>
+          </a>
+
+          <a class="info-item" href="https://linkedin.com/in/sophia-karylle-chavez-4898a7377/" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <span>Sophia Karylle Chavez</span>
+          </a>
+
+          <a class="info-item" href="https://github.com/coffeebinnie" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github"></i>
+            <span>coffeebinnie</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Sophia Karylle Chavez. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", cursive; 
+  background: linear-gradient(#B62D43, #FF97A8); 
+  color: white; 
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+.sub-header {
+  display: flex;
+  align-items: center;
+  gap: 90px; 
+  padding: 50px 6vw 20px;
+}
+
+.back-btn {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  background: #ED5069;
+  padding: 10px 16px;
+  border-radius: 12px;
+  transition: 0.2s;
+}
+
+.back-btn:hover {
+  background: #B62D43;
+  transform: scale(1.05);
+}
+
+.sub-title {
+  font-size: 26px;
+  color: white;
+}
+
+.sub-wrapper {
+  max-width: 1000px; 
+  margin: 0 auto;
+  padding: 20px 6vw 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; 
+}
+
+.sub-image {
+  display: block;
+  width: 90%;
+  max-width: 750px; 
+  height: auto;
+  margin: 0 auto; 
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4); 
+}
+
+
+.sub-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left; 
+}
+
+.project-info {
+  font-size: 18px;
+  line-height: 1.8;
+  color: white; 
+}
+
+.project-members {
+    margin-top: 10px;
+}
+
+.project-members p {
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: white;
+}
+
+.project-members ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.project-members li {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 4px;
+}
+
+.view-btn {
+  display: inline-block;
+  background: #ED5069;
+  color: white;
+  text-decoration: none;
+  font-family: "Press Start 2P", cursive;
+  padding: 10px 16px;
+  border-radius: 12px;
+  width: auto;
+  text-align: center;
+  transition: 0.2s;
+  align-self: flex-start; 
+  margin-top: 10px;
+}
+
+.view-btn:hover {
+  background: #B62D43;
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 640px) {
+  .sub-title {
+    font-size: 22px;
+  }
+
+  .back-btn, .view-btn {
+    font-size: 11px;
+    padding: 8px 14px;
+  }
+  
+  .sub-header {
+    padding-top: 30px;
+    gap: 20px; 
+  }
+  
+  .project-info {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .project-members li {
+    font-size: 14px;
+  }
+
+  .sub-image {
+    width: 100%; 
+  }
+}
